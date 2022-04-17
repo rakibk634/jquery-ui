@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Css links-->
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Jquery UI</title>
+  </head>
+  <body>
+    <header class="head">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand logo" href="#">JQUERY UI</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#jsmenu"
+              aria-controls="jsmenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse menu" id="jsmenu">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Interactions</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="widget.html"
+                    >Widget</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="effects.html"
+                    >Effects</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hm">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- dragabble start -->
+
+          <div class="col-lg-4">
+            <h2>DRAGABBLE</h2>
+            <div id="drag" class="ui-widget-content">
+              <p>Drag me around</p>
+            </div>
+          </div>
+          <!-- dragabble end -->
+          <!-- droppable start-->
+          <div class="col-lg-4">
+            <h2>DROPPABLE</h2>
+            <div id="dragme" class="ui-widget-content">
+              <p>Drag me to my target</p>
+            </div>
+
+            <div id="drop" class="ui-widget-header">
+              <p>Drop here</p>
+            </div>
+          </div>
+          <!-- droppable end -->
+          <!-- Sortable start -->
+          <div class="col-lg-4">
+            <h2>SORTABLE</h2>
+            <ul id="sort">
+              <li class="ui-state-default">
+                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
+              </li>
+              <li class="ui-state-default">
+                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
+              </li>
+              <li class="ui-state-default">
+                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
+              </li>
+              <li class="ui-state-default">
+                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
+              </li>
+              <li class="ui-state-default">
+                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+              </li>
+              <li class="ui-state-default">
+                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+              </li>
+              <li class="ui-state-default">
+                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+              </li>
+            </ul>
+          </div>
+
+          <!-- Sortable end -->
+        </div>
+
+        <!-- ROW 2 -->
+
+        <div class="row justify-content-between yo">
+          <!-- Accordion start -->
+          <!-- Accordion start -->
+          <div class="col-lg-5">
+            <h2>ACCORDION</h2>
+            <div id="accor">
+              <h3 class="ca">Section 1</h3>
+              <div>
+                <p>
+                  Mauris mauris ante, blandit et, ultrices a, suscipit eget,
+                  quam. Integer ut neque. Vivamus nisi metus, molestie vel,
+                  gravida in, condimentum sit amet, nunc.
+                </p>
+              </div>
+              <h3 class="ca">Section 2</h3>
+              <div>
+                <p>
+                  Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum
+                  sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet,
+                  mauris turpis porttitor velit, faucibus .
+                </p>
+              </div>
+
+              <h3 class="ca">Section 3</h3>
+              <div>
+                <p>
+                  Cras dictum. Pellentesque habitant morbi tristique senectus et
+                  netus et malesuada fames ac turpis egestas. Vestibulum ante
+                  ipsum primis in faucibus orci luctus et ultrices .
+                </p>
+                <p>
+                  Suspendisse eu nisl. Nullam ut libero. Integer dignissim
+                  consequat lectus. Class aptent taciti sociosqu ad litora
+                  torquent per conubia nostra, per inceptos himenaeos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Accordion end -->
+
+          <!-- Autocomplete Start -->
+          <div class="col-lg-5">
+            <h2>Autocomplete</h2>
+            <form>
+              <div class="mb-3">
+                <label for="aufo" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control bf"
+                  id="aufo"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control bf"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="ui-widget lf mb-3">
+                <label for="tags">Completed Courses </label>
+                <input id="tags" class="bf" />
+              </div>
+
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="afb">Submit</button>
+            </form>
+          </div>
+
+          <!-- Autocomplete end -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Css links-->
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <title>Widgets</title>
+  </head>
+  <body>
+    <header class="head">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand logo" href="index.html">JQUERY UI</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#jsmenu"
+              aria-controls="jsmenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse menu" id="jsmenu">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Interactions</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="widget.html"
+                    >Widget</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="effects.html"
+                    >Effects</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hm">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Date picker start-->
+          <div class="col-lg-4">
+            <h2>DATE PICKER</h2>
+            <!-- Date picker -->
+            <div class="dt">
+              <p>Choose Date: <input type="text" id="datepicker" /></p>
+            </div>
+          </div>
+
+          <!-- Menu start -->
+          <div class="col-lg-4">
+            <h2>MENU</h2>
+
+            <div class="mn">
+              <ul id="menu">
+                <li class="ui-state-disabled"><div>Toys (n/a)</div></li>
+                <li><div>Books</div></li>
+                <li><div>Clothing</div></li>
+                <li>
+                  <div>Electronics</div>
+                  <ul>
+                    <li class="ui-state-disabled">
+                      <div>Home Entertainment</div>
+                    </li>
+                    <li><div>Car Hifi</div></li>
+                    <li><div>Utilities</div></li>
+                  </ul>
+                </li>
+                <li><div>Movies</div></li>
+                <li>
+                  <div>Music</div>
+                  <ul>
+                    <li>
+                      <div>Rock</div>
+                      <ul>
+                        <li><div>Alternative</div></li>
+                        <li><div>Classic</div></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div>Jazz</div>
+                      <ul>
+                        <li><div>Freejazz</div></li>
+                        <li><div>Big Band</div></li>
+                        <li><div>Modern</div></li>
+                      </ul>
+                    </li>
+                    <li><div>Pop</div></li>
+                  </ul>
+                </li>
+                <li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Menu end -->
+
+          <!-- Slider Start -->
+
+          <div class="col-lg-4">
+            <h2>SLIDER</h2>
+
+            <div id="slider"></div>
+          </div>
+          <!-- Slider end -->
+        </div>
+
+        <!-- ROW 2 -->
+
+        <div class="row yo">
+          <!-- Tooltip strat -->
+
+          <div class="col-lg-5">
+            <h2>Tooltip</h2>
+            <div class="tp">
+              <p>
+                <a href="#" title="That's what this widget is">Tooltips</a> can
+                be attached to any element. When you hover the element with your
+                mouse, the title attribute is displayed in a little box next to
+                the element, just like a native tooltip.
+              </p>
+              <p>
+                But as it&apos;s not a native tooltip, it can be styled. Any
+                themes built with
+                <a
+                  href="http://jqueryui.com/themeroller/"
+                  title="ThemeRoller: jQuery UI's theme builder application"
+                  >ThemeRoller</a
+                >
+                will also style tooltips accordingly.
+              </p>
+              <p>
+                Tooltips are also useful for form elements, to show some
+                additional information in the context of each field.
+              </p>
+              <p>
+                <label for="age">Your age:</label
+                ><input
+                  id="age"
+                  title="We ask for your age only for statistical purposes."
+                />
+              </p>
+              <p>Hover the field to see the tooltip.</p>
+            </div>
+          </div>
+          <!-- Tooltip end -->
+
+          <!-- Tabs start -->
+          <div class="col-lg-5">
+            <h2>select menu</h2>
+            <div class="demo">
+ 
+              <form action="#">
+               
+                <fieldset>
+                  <label for="speed">Select a speed</label>
+                  <select name="speed" id="speed">
+                    <option>Slower</option>
+                    <option>Slow</option>
+                    <option selected="selected">Medium</option>
+                    <option>Fast</option>
+                    <option>Faster</option>
+                  </select>
+               
+                  <label for="files">Select a file</label>
+                  <select name="files" id="files">
+                    <optgroup label="Scripts">
+                      <option value="jquery">jQuery.js</option>
+                      <option value="jqueryui">ui.jQuery.js</option>
+                    </optgroup>
+                    <optgroup label="Other files">
+                      <option value="somefile">Some unknown file</option>
+                      <option value="someotherfile">Some other file with a very long option text</option>
+                    </optgroup>
+                  </select>
+               
+                  <label for="number">Select a number</label>
+                  <select name="number" id="number">
+                    <option>1</option>
+                    <option selected="selected">2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                  </select>
+               
+                  <label for="salutation">Select a title</label>
+                  <select name="salutation" id="salutation">
+                    <option disabled selected>Please pick one</option>
+                    <option>Mr.</option>
+                    <option>Mrs.</option>
+                    <option>Dr.</option>
+                    <option>Prof.</option>
+                    <option>Other</option>
+                  </select>
+                </fieldset>
+               
+              </form>
+               
+              </div>
+          <!-- Tabs end -->
+        </div>
+      </div>
+    </section>
+
+    <section class="yo">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4"><div class="toggler">
+            <div id="effect" class="ui-widget-content ui-corner-all">
+              <h3 class="ui-widget-header ui-corner-all">Animate</h3>
+              <p>
+                Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+              </p>
+            </div>
+          </div>
+           
+          <button id="button" class="ui-state-default ui-corner-all">Toggle Effect</button>
+           </div>
+        </div>
+      </div>
+    </section>
+
+  
+
+    <!-- Script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+@font-face {
+  font-family: PTSans-Regular;
+  src: url(../fonts/PTSans/PTSans-Regular.woff2);
+}
+@font-face {
+  font-family: PTSans-Bold;
+  src: url(../fonts/PTSans/PTSans-Bold.woff2);
+}
+
+/* Common start */
+
+body {
+  background-color: rgb(48, 48, 48);
+  font-family: PTSans-Regular;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 20px;
+}
+
+/* Common end */
+
+/* Header start */
+
+.head {
+  background-color: black;
+  margin-bottom: 60px;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+  color: aquamarine !important;
+}
+
+.menu ul li a {
+  padding-right: 60px !important;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.menu ul li a:hover {
+  color: aquamarine !important;
+  text-decoration: underline;
+}
+
+h2 {
+  margin-bottom: 50px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+#drag {
+  width: 150px;
+  height: 150px;
+  padding: 25px;
+  background-color: aquamarine;
+  border: 1px aquamarine solid;
+}
+
+/* Droppable strat*/
+
+#dragme {
+  background-color: #ff2076;
+  width: 100px;
+  height: 100px;
+  padding: 0.5em;
+  float: left;
+  margin: 10px 10px 10px 0;
+  border: 1px aquamarine solid;
+}
+#drop {
+  background-color: aquamarine;
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  float: left;
+  margin: 10px;
+}
+
+/* Droppable end*/
+
+/* Sortable start */
+#sort {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+#sort li {
+  background-color: aquamarine;
+  margin: 0 3px 3px 3px;
+  padding: 25px;
+  padding-left: 1.5em;
+  font-size: 1.4em;
+  height: 18px;
+  list-style-type: square;
+  color: #000;
+}
+#sort li span {
+  position: absolute;
+  margin-left: -1.3em;
+}
+
+/* Sortable end */
+
+.yo {
+  margin: 100px 0;
+}
+
+/* accordion start */
+.ac {
+  margin-bottom: 100px;
+}
+
+.ca {
+  background-color: aquamarine !important;
+  font-size: 20px !important;
+  font-weight: 500;
+}
+
+.ui-state-active {
+  color: #ff2076 !important;
+}
+
+.ui-widget-content {
+  background-color: #000 !important;
+  color: aliceblue !important;
+}
+
+button {
+  padding: 15px 40px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  background-color: aquamarine !important;
+  color: #000 !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.bf {
+  background-color: rgba(0, 0, 0, 0.26) !important;
+  border: 1px rgba(127, 255, 212, 0.527) solid;
+  border-radius: 0;
+  padding: 10px;
+  width: 60%;
+}
+
+.form-control {
+  font-size: 17px !important;
+  color: aquamarine !important;
+}
+
+.ui-autocomplete-input {
+  color: aquamarine !important;
+}
+
+/* Date picker */
+
+.hasDatepicker {
+  background-color: rgba(0, 0, 0, 0.26) !important;
+  border: 1px rgba(127, 255, 212, 0.527) solid;
+  border-radius: 0;
+  color: aquamarine;
+}
+
+/* Menu */
+
+.ui-menu {
+  border: 1px aquamarine solid !important;
+}
+
+/* SLIDER */
+
+.ui-slider {
+  border: 1px aquamarine solid !important;
+}
+
+/* Tooltip */
+
+label {
+  display: inline-block;
+  width: 15em;
+}
+
+.tp p {
+  font-size: 17px;
+  color: aliceblue;
+}
+
+.tp p a {
+  color: aquamarine;
+}
+
+/* Select menu */
+
+fieldset {
+  border: 0;
+}
+label {
+  display: block;
+  margin: 30px 0 0 0;
+}
+.overflow {
+  height: 100px;
+}
+
+.toggler {
+  width: 500px;
+  height: 200px;
+}
+#button {
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+#effect {
+  position: relative;
+  width: 240px;
+  height: 170px;
+  padding: 0.4em;
+}
+#effect h3 {
+  margin: 0;
+  padding: 0.4em;
+  text-align: center;
+}
+
+/* Spinner */
+.inp {
+  background-color: #000;
+  border: 1px aquamarine solid;
+  padding: 15px 5px;
+  font-size: 22px !important;
+  color: aquamarine;
+}
+
+.cur {
+  background-color: aquamarine;
+  font-size: 20px;
+}
+
+/* Selectable */
+
+.ui-button-icon-only.demo-splitbutton-select {
+  width: 1em;
+}
+
+.output {
+  color: #ff2076;
+}
+/* ====================== */
+.toggler {
+  width: 500px;
+  height: 200px;
+  position: relative;
+}
+#button {
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+#effect {
+  width: 240px;
+  height: 170px;
+  padding: 0.4em;
+  position: relative;
+  background: #fff;
+}
+#effect h3 {
+  margin: 0;
+  padding: 0.4em;
+  text-align: center;
+}
+
+.bof {
+  padding: 200px 0 !important;
+}
